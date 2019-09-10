@@ -30,7 +30,17 @@
         }
         document.oncontextmenu = nocontextmenu; // for IE5+
         document.onmousedown = norightclick; // for all others
-        // -->
+        document.onkeydown = document.onkeyup = document.onkeypress = function (event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+            if (e && e.keyCode == 123) {
+                mAlert();
+                e.returnValue = false;
+                return (false);
+            }
+        }
+        function mAlert() {
+            console.log("感谢您使用基础支撑平台，禁止一切想操作控制台的行为！！！");
+        }
     </script>
 </head>
 
