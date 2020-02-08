@@ -1,0 +1,172 @@
+@charset "utf-8";
+
+*,html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+/*给所有的文字标签p做动画*/
+figure figcaption p,h2,span,div{
+	transition: all 0.35s;
+}
+
+figure{
+	position: relative;
+	overflow: hidden;
+	height: 500px;
+    float: left;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+figcaption{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	color: aliceblue;
+    font-family: "微软雅黑";
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+
+}
+.title{
+    position: relative;
+    width : 60%;
+    height: 10%;
+    margin: 0 auto;
+}
+.name{
+    display: flex;  
+    align-items: center; 
+    justify-content: center; 
+    color: rgba(19, 15, 15,.8);
+    font-size: 35px;
+}
+.names{
+    position: absolute;
+    left: 58%;
+    top: 50%;
+    font-size: 20px;
+    color: red;
+    font-weight: bold;
+}
+.content{
+    width: 60%;
+    height: 10%;
+    margin: 0 auto;
+}
+.email{
+    text-decoration:none;
+    left:21%;
+    position: relative;
+}
+.resume{
+    left: 40%;
+    position: relative;
+}
+.icon1,.icon2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    margin-left: -50px;
+    z-index: 2;
+}
+.icon1{
+    background: url("icon/email.png") no-repeat;
+}
+.icon2{
+    background: url("icon/pages.png") no-repeat;
+}
+.span1,.span2{
+    position: relative;
+    top: 30%;
+    color: black;
+    z-index: 3;
+}
+.span1:hover,.span2:hover{
+    color: red;
+}
+.codes{
+    width: 100%;
+    height: 78%;
+    /* border: 2px solid yellow; */
+    margin-top: 10px;
+    margin: 0 auto;
+}
+.project{
+    /* border: 1px solid red; */
+    height: 40px;
+    width: 200px;
+    font-size: 20px;
+    margin-left: 20px;
+    background-color: rgb(56, 94, 35);
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    padding-top: 8px;
+}
+.project:hover{
+    background-color: red;
+}
+.pics{
+    padding: 20px;
+}
+
+/*根据屏幕的大小调整显示图片内容*/
+@media screen and (max-width:600px){
+	figure{
+		width: 100%;
+	}
+}
+@media screen and (min-width:601px) and (max-width:1000px){
+	figure{
+		width: 70%;
+	}
+}
+@media screen and (min-width:1001px){
+	figure{
+		width: 50%;
+	}
+}
+
+.fig1{
+    width: 60%;
+    height: 85%;
+}
+.fig2{
+    width: 25%;
+    height: 35%;
+}
+.fig3{
+    width: 10%;
+    height: 30%;
+}
+.fig4{
+    width: 35%;
+    height: 50%;
+}
+.fig5{
+    width: 15%;
+    height: 35%;
+}
+.fig6{
+    width: 15%;
+    height: 35%;
+}
+.fig7{
+    width: 20%;
+    height: 30%;
+}
+.fig8{
+    width: 24%;
+    height: 30%;
+}
+.fig9{
+    width: 18%;
+    height: 30%;
+}
